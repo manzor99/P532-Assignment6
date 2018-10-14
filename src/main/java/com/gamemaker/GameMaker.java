@@ -3,6 +3,7 @@ package com.gamemaker;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import java.awt.Toolkit;
+import java.swing.JFrame;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -78,7 +79,7 @@ public class GameMaker {
 	}
 
 	public static void runGame() {
-		PropertyConfigurator.configure("log4j.properties");
+		/*PropertyConfigurator.configure("log4j.properties");
 
 		try {
 			// UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
@@ -91,7 +92,9 @@ public class GameMaker {
 			public void run() {
 				startGame(false);
 			}
-		});
+		});*/
+		JFrame frame = new JFrame();
+		frame.setVisible(true);
 	}
 
 	public static void main(String args[]) {
