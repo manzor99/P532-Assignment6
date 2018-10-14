@@ -1,12 +1,9 @@
 package com.springboot;
 
-import java.awt.Color;
-import java.awt.Dimension;
-
-import javax.swing.JPanel;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.gamemaker.GameMaker;
 
 @RestController
 public class SpringController {
@@ -24,12 +21,8 @@ public class SpringController {
 	}
 
 	@RequestMapping("/gameMaker")
-	public JPanel gameMaker() {
-		// GameMaker.runGame();
-		JPanel panel = new JPanel();
-		panel.setPreferredSize(new Dimension(200, 200));
-		panel.setBackground(Color.BLUE);
-		return panel;
+	public void gameMaker() {
+		GameMaker.runGame();
 	}
 
 }
