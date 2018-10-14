@@ -94,8 +94,8 @@ public class GameMaker {
 		});
 	}
 
-	public static void main(String args[]) {
-		/*
+	/*public static void main(String args[]) {
+		
 		 * PropertyConfigurator.configure("log4j.properties");
 		 * 
 		 * try { UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
@@ -104,8 +104,8 @@ public class GameMaker {
 		 * SwingUtilities.invokeLater(new Runnable() {
 		 * 
 		 * @Override public void run() { startGame(false); } });
-		 */
+		 *
 		runGame();
-	}
+	}*/
 
 }
