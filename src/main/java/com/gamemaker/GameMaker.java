@@ -81,7 +81,7 @@ public class GameMaker {
 		PropertyConfigurator.configure("log4j.properties");
 
 		try {
-			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+			// UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}
