@@ -2,7 +2,7 @@ package com.gamemaker;
 
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-
+import java.awt.Toolkit;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
