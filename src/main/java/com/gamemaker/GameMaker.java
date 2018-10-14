@@ -1,7 +1,6 @@
 package com.gamemaker;
 
 import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -81,7 +80,7 @@ public class GameMaker {
 		PropertyConfigurator.configure("log4j.properties");
 
 		try {
-			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+			//UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}
@@ -95,14 +94,14 @@ public class GameMaker {
 	}
 
 	/*public static void main(String args[]) {
-		
+
 		 * PropertyConfigurator.configure("log4j.properties");
-		 * 
+		 *
 		 * try { UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 		 * } catch (Exception e) { log.error(e.getMessage()); }
-		 * 
+		 *
 		 * SwingUtilities.invokeLater(new Runnable() {
-		 * 
+		 *
 		 * @Override public void run() { startGame(false); } });
 		 *
 		runGame();
